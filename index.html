@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estudos</title>
+
+</head>
+<body>
+    <h1> Resumos e Apontamentos das cadeiras do segundo semestre</h1>
+
+    <form id="noteform"><select id="notetype" required>
+        <option value="" disabled selected>Selecione o tipo de anotação</option>
+        <option value="resumo">Resumo</option>
+        <option value="apontamento">Apontamento</option>
+        <option value="comandos">Comandos</option>
+    </select>
+    <textarea id="notetext" placeholder="Digite a tua anotação" required>
+</textarea>
+<button type="submit"> Guardar</button>
+</form>
+
+<input type="text" id="searchinput" placeholder="Pesquisar anotação">
+
+<section id="anotacoes">
+    <h2>Anotações guardadas</h2>
+    <div id="noteslist">
+        <!-- As anotações serão adicionadas aqui dinamicamente -->
+         </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

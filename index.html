@@ -8,7 +8,18 @@
 
 </head>
 <body>
-    <h1> Resumos e Apontamentos das cadeiras do segundo semestre</h1>
+    <nav>
+        <label for="disciplinas">Ir para as disciplinas:</label>
+        <select id="disciplinas">
+            <option value="" disabled selected>Selecione a disciplina</option>
+            <option value="Cadeiras/TADR.html">Tópicos Avançados de Redes</option>
+            <option value="Cadeiras/RESM.html">Redes e Sistemas Multimédia</option>
+            <option value="Cadeiras/PW.html">Programação Web</option>
+            <option value="Cadeiras/CESNC.html">Criptografia e Segurança nas Comunicações</option>
+        </select>
+    </nav>
+    
+    <h1> Resumos e Apontamentos</h1>
 
     <form id="noteform"><select id="notetype" required>
         <option value="" disabled selected>Selecione o tipo de anotação</option>
@@ -16,12 +27,19 @@
         <option value="apontamento">Apontamento</option>
         <option value="comandos">Comandos</option>
     </select>
-    <textarea id="notetext" placeholder="Digite a tua anotação" required>
-</textarea>
+    <textarea id="notetext" placeholder="Digite a tua anotação" required></textarea>
 <button type="submit"> Guardar</button>
 </form>
 
 <input type="text" id="searchinput" placeholder="Pesquisar anotação">
+
+<form action="https://www.notion.so/Studies-1ea3fa3e2521805b8f6df007ce3ab581?pvs=4" method="get" target="_blank">
+  <input type="text" placeholder="Pesquisar resumos no Notion..." />
+  <button type="submit">🔍 Pesquisar</button>
+</form>
+
+
+
 
 <section id="anotacoes">
     <h2>Anotações guardadas</h2>
@@ -29,11 +47,6 @@
         <!-- As anotações serão adicionadas aqui dinamicamente -->
          </div>
 </section>
-
-<form action="https://www.notion.so/Studies-1ea3fa3e2521805b8f6df007ce3ab581?pvs=4" method="get" target="_blank">
-  <input type="text" placeholder="Pesquisar resumos no Notion..." />
-  <button type="submit">🔍 Pesquisar</button>
-</form>
 <script src="script.js"></script>
 </body>
 </html>

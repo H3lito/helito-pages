@@ -1,4 +1,25 @@
 /* Reset básico */
+
+
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 2px solid #1e90ff;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  transition: border-color 0.3s ease;
+}
+
+label {
+  color: #e0e0e0;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+/* Estilo geral da página */
 * {
   box-sizing: border-box;
   margin: 0;
